@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  font-family: var(--font-main);
+  font-family: var(--font-main), sans-serif;
   font-size: 1.125rem;
   line-height: 1.5;
   color: var(--black);
@@ -39,6 +39,7 @@ body {
 }
 
 h1 {
+  font-family: var(--font-main), sans-serif;
   font-size: 3rem;
   line-height: 1.1667;
   font-weight: 300;
