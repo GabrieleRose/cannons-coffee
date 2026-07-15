@@ -130,6 +130,7 @@ align-items: center;
   background-color: var(--lightblue);
   padding: 2rem;
 }
+
 .menu-button {
   background-color: var(--catalina);
   color: var(--white);
@@ -141,6 +142,21 @@ align-items: center;
   margin-top: 1rem;
 }
 
+footer img {
+  max-height: 150px;
+  width: auto;
+}
+
+ footer {
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  color: var(--white);
+  border-top: solid 9px var(--sunglow);
+}
+
+
+
 @media (min-width: 650px) {
   .card-container2 {
     grid-template-columns: 1fr 1fr;
@@ -149,9 +165,6 @@ align-items: center;
 }
 
 @media (min-width: 1000px) {
-  /* .brand {
-    text-align: center;
-  } */
 
  header {
   justify-content: space-between;
