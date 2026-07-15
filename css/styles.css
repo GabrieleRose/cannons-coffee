@@ -4,7 +4,7 @@
   --black: #000;
   --catalina: #06327d;
   --blue: #2b70e4;
-  --veg: ##209d5c;
+  --veg: #209d5c;
   --sunglow: #ffd034;
   --white: #fff;
   --lightblue: #cadbf8;
@@ -68,6 +68,11 @@ h3 {
   background-color: var(--veg);
   color: var(--white);
   border-radius: 10px;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 1rem;
 }
 
 header {
@@ -96,12 +101,22 @@ nav a {
   text-transform: uppercase;
 }
 
-/* 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-} */
+
+.card-container1 {
+  display: grid;
+grid-template-columns: 1fr 1fr;
+padding: 3rem;
+gap: 3rem;
+background-color: var(--white);
+align-items: center;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 
 @media (min-width: 1000px) {
   .brand {
