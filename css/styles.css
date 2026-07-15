@@ -16,6 +16,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
@@ -39,12 +40,15 @@ body {
 }
 
 h1 {
+  color: var(--white);
   font-family: var(--font-main), sans-serif;
   font-size: 3rem;
   line-height: 1.1667;
   font-weight: 300;
   text-transform: uppercase;
   margin: 0;
+  text-align: center;
+  display: inline;
 }
 
 h2 {
@@ -64,4 +68,48 @@ h3 {
   background-color: var(--veg);
   color: var(--white);
   border-radius: 10px;
+}
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  border-bottom: solid 9px var(--sunglow);
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  text-transform: uppercase;
+  gap: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* 
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+} */
+
+@media (min-width: 1000px) {
+  .brand {
+    text-align: center;
+  }
+
+ header {
+  justify-content: space-between;
+  align-items: baseline;
+ }
 }
